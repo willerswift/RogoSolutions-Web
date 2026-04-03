@@ -106,6 +106,7 @@ a {
   justify-content: center !important;
   gap: 8px;
   padding: 14px 36px;
+  min-width: 200px;
   border-radius: 50px;
   font-weight: 600;
   font-family: var(--font-heading);
@@ -207,6 +208,14 @@ a {
   display: flex;
   gap: 15px;
   align-items: center;
+}
+
+.nav-cta .btn {
+  padding: 8px 20px;
+  min-width: unset;
+  font-size: 0.85rem;
+  box-sizing: border-box;
+  line-height: 1.5;
 }
 
 /* Mobile Menu Toggle */
