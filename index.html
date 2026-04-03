@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogo Solutions - Make your life Smart</title>
+    <meta name="description" content="Kiến tạo nền tảng sản phẩm IoT của bạn theo cách hiệu quả. Hệ sinh thái nhà thông minh từ Rogo Solutions.">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="icon" type="image/x-icon" href="assets/rogo-logo.ico">
+    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="dashboard.css?v=3">
+    <style>
+      /* Force button centering — overrides any cache or specificity issue */
+      .btn, a.btn, button.btn {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+      }
+    </style>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <div class="bg-glow bg-glow-right"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-brand">
+            <img src="assets/rogo-logo.ico" alt="Rogo logo" class="nav-logo" />
+            Rogo
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#about">Về chúng tôi</a></li>
+            <li><a href="#features">Giải pháp</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+        <div class="nav-cta" id="nav-cta">
+            <button class="btn btn-secondary" id="btn-open-dashboard"><i class="fa-solid fa-gauge-high"></i> Dashboard</button>
+            <a href="https://iot.rogo.com.vn/login" target="_blank" rel="noopener" class="btn btn-primary">Tham gia ngay</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero container animate-on-scroll">
+            <!-- Animated aurora strip -->
+            <div class="hero-aurora" aria-hidden="true">
+                <div class="aurora-blob aurora-blob-1"></div>
+                <div class="aurora-blob aurora-blob-2"></div>
+                <div class="aurora-blob aurora-blob-3"></div>
+                <div class="aurora-blob aurora-blob-4"></div>
+                <div class="aurora-blob aurora-blob-5"></div>
+            </div>
+
+            <div class="hero-badge">Nền tảng IoT Hàng Đầu</div>
+            <h1>Make your life <span style="color: var(--primary-color);">Smart</span></h1>
+            <p>Rogo Solutions là công ty chuyên cung cấp các giải pháp nền tảng, thiết bị thông minh cho doanh nghiệp. Chúng tôi đã xây dựng nền tảng cloud kết nối đa dạng thiết bị thông qua việc ứng dụng IoT.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Liên hệ ngay</a>
+                <a href="https://iot.rogo.com.vn/login" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fas fa-cloud"></i> Nền tảng IoT</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="container">
+            <div class="text-center animate-on-scroll">
+                <h2>Tất cả giải pháp trong một nền tảng</h2>
+                <p class="mt-4" style="color: var(--text-muted);">Kiến tạo nền tảng sản phẩm IoT của bạn theo cách hiệu quả</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Nhanh chóng</h3>
+                    <p>Dễ dàng tùy chỉnh theo mong muốn của khách hàng, giúp giảm thời gian tích hợp và phát triển hệ thống.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                    <h3>Đơn giản</h3>
+                    <p>Luôn cập nhật và giúp sản phẩm của khách hàng nắm bắt những công nghệ tiên tiến nhất một cách tự nhiên.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon"><i class="fas fa-users-viewfinder"></i></div>
+                    <h3>Thân thiện</h3>
+                    <p>Ứng dụng với giao diện thiết kế tinh giản, thân thiện, dễ dàng thao tác với mọi người dùng.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>An toàn</h3>
+                    <p>Máy chủ được đặt hoàn toàn tại Việt Nam, đảm bảo tính bảo mật và minh bạch cho luồng dữ liệu của bạn.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Quy mô</h3>
+                    <p>Hỗ trợ cập nhật tính năng mới và sửa chữa lỗi từ xa cho khách hàng ở bất kỳ đâu.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Interface -->
+        <section class="app-showcase" id="screenshots">
+            <div class="container">
+                <div class="showcase-header animate-on-scroll">
+                    <span class="showcase-eyebrow">Ứng dụng thực tế</span>
+                    <h2>Trải nghiệm thông minh<br>trong tầm tay bạn</h2>
+                    <p>Giao diện trực quan, dễ dùng — điều khiển toàn bộ ngôi nhà chỉ với vài chạm.</p>
+                </div>
+            </div>
+            <div class="phones-track-wrapper">
+                <div class="phones-track">
+                    <div class="phone-card">
+                        <div class="phone-frame">
+                            <img src="assets/app-screen-1.jpg" alt="Rogo App - Màn hình chính" loading="lazy" />
+                        </div>
+                    </div>
+                    <div class="phone-card">
+                        <div class="phone-frame">
+                            <img src="assets/app-screen-2.jpg" alt="Rogo App - Điều khiển thiết bị" loading="lazy" />
+                        </div>
+                    </div>
+                    <div class="phone-card">
+                        <div class="phone-frame">
+                            <img src="assets/app-screen-3.jpg" alt="Rogo App - Danh sách thiết bị" loading="lazy" />
+                        </div>
+                    </div>
+                    <div class="phone-card">
+                        <div class="phone-frame">
+                            <img src="assets/app-screen-4.jpg" alt="Rogo App - Kịch bản tự động" loading="lazy" />
+                        </div>
+                    </div>
+                    <div class="phone-card">
+                        <div class="phone-frame">
+                            <img src="assets/app-screen-5.jpg" alt="Rogo App - Lịch hẹn thông minh" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Functions list -->
+        <section class="container" id="about">
+            <div class="functions-layout">
+                <div class="functions-text animate-on-scroll">
+                    <h2>Chức năng Vượt trội</h2>
+                    <p>Giải pháp nhà thông minh của Rogo với những tính năng hoàn thiện giúp điều khiển, giám sát thiết bị từ xa. Tạo kịch bản theo nhu cầu sử dụng.</p>
+                    <p>Hệ thống phần mềm của chúng tôi giúp người dùng có thể liên kết thiết bị để tạo phiên bản tự động hóa cực kỳ dễ dàng thông qua chuẩn giao tiếp WILE mới.</p>
+                </div>
+                <div class="functions-list animate-on-scroll">
+                    <div class="func-item">
+                        <i class="fas fa-sliders"></i>
+                        <div>
+                            <h4>Điều khiển một chạm</h4>
+                            <span style="color:var(--text-muted); font-size: 0.85rem;">Quản lý toàn bộ ngôi nhà chỉ với một giao diện</span>
+                        </div>
+                    </div>
+                    <div class="func-item">
+                        <i class="fas fa-bolt"></i>
+                        <div>
+                            <h4>Kịch bản tự động</h4>
+                            <span style="color:var(--text-muted); font-size: 0.85rem;">Phản hồi theo thời gian thực và tự động kích hoạt</span>
+                        </div>
+                    </div>
+                    <div class="func-item">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <h4>Giám sát hiệu năng</h4>
+                            <span style="color:var(--text-muted); font-size: 0.85rem;">Theo dõi mức độ tiêu thụ năng lượng thông minh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="container" id="join">
+            <div class="cta-banner animate-on-scroll">
+                <h2>Tham gia cùng chúng tôi</h2>
+                <p class="mb-4 mt-4" style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Đăng ký sử dụng Nền tảng IoT ngay hôm nay và kiến tạo giải pháp thông minh của bạn.
+                </p>
+                <a href="https://iot.rogo.com.vn/login" target="_blank" rel="noopener" class="btn btn-primary btn-lg" style="padding: 15px 40px; font-size: 1.1rem; gap: 10px;">
+                    Bắt đầu với IoT Platform <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-top">
+            <div class="footer-col" style="max-width: 300px;">
+                <div class="nav-brand" style="margin-bottom: 20px; display:inline-flex; align-items:center; gap:8px;">
+                    <img src="assets/rogo-logo.ico" alt="Rogo logo" class="nav-logo" />
+                    Rogo
+                </div>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">
+                    Rogo Solutions mang lại giải pháp công nghệ hiện đại, kết nối không giới hạn cho ngôi nhà của bạn.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Khám phá</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Về chúng tôi</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Pháp lý</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Term Of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kết nối</h4>
+                <div style="display: flex; gap: 15px;">
+                    <a href="#" style="color: var(--text-muted); font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                    <a href="#" style="color: var(--text-muted); font-size: 1.5rem;"><i class="fab fa-youtube"></i></a>
+                    <a href="#" style="color: var(--text-muted); font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            &copy; 2026 Rogo Solutions. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+
+    <!-- ========================================================
+         DASHBOARD OVERLAY
+         Ẩn mặc định, hiện khi bấm nút Dashboard trên navbar
+         ======================================================== -->
+    <div id="dashboard-overlay" class="db-overlay">
+
+      <!-- ===== LOGIN SCREEN ===== -->
+      <div id="login-screen" class="db-screen active">
+        <div class="login-card glass-card">
+          <button class="btn-back" id="btn-back-from-login">
+            <i class="fa-solid fa-arrow-left"></i> Quay lại trang chủ
+          </button>
+          <div class="login-logo">
+            <i class="fa-solid fa-house-signal"></i>
+            <span>Rogo</span>
+          </div>
+          <h2>Điều khiển thiết bị</h2>
+          <p class="login-sub">Đăng nhập để quản lý và điều khiển thiết bị thông minh</p>
+
+          <details class="config-section">
+            <summary>Cấu hình nâng cao</summary>
+            <div class="config-fields">
+              <label>App Key
+                <input type="text" id="cfg-appkey" placeholder="x-appkey" />
+              </label>
+              <label>App Secret
+                <input type="text" id="cfg-appsecret" placeholder="x-appsecret" />
+              </label>
+              <label>Môi trường
+                <select id="cfg-env">
+                  <option value="production">Production</option>
+                  <option value="staging">Staging</option>
+                </select>
+              </label>
+            </div>
+          </details>
+
+          <form id="login-form" style="display:flex; flex-direction:column; gap:12px;">
+            <div class="field-group">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="login-username" placeholder="Tên đăng nhập hoặc Email" autocomplete="username" required />
+            </div>
+            <div class="field-group">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="login-password" placeholder="Mật khẩu" autocomplete="current-password" required />
+            </div>
+            <button type="submit" class="btn-login" id="btn-login" style="margin-top:8px;">
+              <span id="btn-login-text">Đăng nhập</span>
+              <i class="fa-solid fa-spinner fa-spin" id="btn-login-spinner" style="display:none"></i>
+            </button>
+          </form>
+
+          <div id="login-error" class="error-msg" style="display:none"></div>
+
+          <p class="cors-note">
+            <i class="fa-solid fa-circle-info"></i>
+            Hãy chọn đúng môi trường phù hợp với tài khoản của bạn
+          </p>
+        </div>
+      </div>
+
+      <!-- ===== DASHBOARD SCREEN ===== -->
+      <div id="dashboard-screen" class="db-screen">
+        <header class="db-header glass-card">
+          <div class="db-header-left">
+            <button class="btn-back" id="btn-back-from-dashboard">
+              <i class="fa-solid fa-arrow-left"></i> Trang chủ
+            </button>
+            <div id="mqtt-status" class="mqtt-badge disconnected">
+              <i class="fa-solid fa-circle"></i>
+              <span>MQTT: Đang kết nối...</span>
+            </div>
+          </div>
+          <div class="db-header-right">
+            <span id="header-username" class="header-user"></span>
+            <button class="btn-icon" id="btn-logout" title="Đăng xuất">
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </button>
+          </div>
+        </header>
+
+        <div class="db-layout">
+          <aside class="db-sidebar glass-card">
+            <div class="sidebar-title">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Vị trí</span>
+              <i class="fa-solid fa-spinner fa-spin sidebar-loading" id="loc-loading" style="display:none"></i>
+            </div>
+            <div id="location-list" class="nav-list"></div>
+          </aside>
+
+          <main class="db-main">
+            <div id="empty-state" class="empty-state">
+              <i class="fa-solid fa-house-signal fa-3x"></i>
+              <p>Chọn một vị trí để xem thiết bị</p>
+            </div>
+            <div id="devices-content" style="display:none">
+              <div class="content-header">
+                <h2 id="location-title"></h2>
+                <div class="content-stats"><span id="stats-text"></span></div>
+              </div>
+              <div id="groups-container"></div>
+            </div>
+            <div id="devices-loading" class="empty-state" style="display:none">
+              <i class="fa-solid fa-spinner fa-spin fa-2x"></i>
+              <p>Đang tải thiết bị...</p>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- ===== CONTROL MODAL ===== -->
+      <div id="control-modal" class="modal-overlay" style="display:none">
+        <div class="modal-card glass-card">
+          <div class="modal-header">
+            <div class="modal-device-info">
+              <div id="modal-device-icon" class="device-icon-lg"></div>
+              <div>
+                <h3 id="modal-device-name"></h3>
+                <span id="modal-device-type" class="device-type-badge"></span>
+              </div>
+            </div>
+            <button class="btn-icon" id="btn-close-modal">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="control-row">
+              <span class="control-label"><i class="fa-solid fa-power-off"></i> Bật / Tắt</span>
+              <label class="toggle-switch">
+                <input type="checkbox" id="ctrl-onoff" />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <div class="control-row" id="ctrl-brightness-row" style="display:none">
+              <span class="control-label"><i class="fa-solid fa-sun"></i> Độ sáng</span>
+              <div class="slider-group">
+                <input type="range" id="ctrl-brightness" min="0" max="1000" step="10" value="500" />
+                <span id="ctrl-brightness-val">500</span>
+              </div>
+            </div>
+            <div class="control-row" id="ctrl-kelvin-row" style="display:none">
+              <span class="control-label"><i class="fa-solid fa-temperature-half"></i> Màu sắc</span>
+              <div class="slider-group">
+                <input type="range" id="ctrl-kelvin" min="800" max="20000" step="100" value="4000" />
+                <span id="ctrl-kelvin-val">4000K</span>
+              </div>
+            </div>
+            <div class="control-row" id="ctrl-actemp-row" style="display:none">
+              <span class="control-label"><i class="fa-solid fa-temperature-half"></i> Nhiệt độ</span>
+              <div class="slider-group">
+                <input type="range" id="ctrl-actemp" min="16" max="30" step="1" value="25" />
+                <span id="ctrl-actemp-val">25°C</span>
+              </div>
+            </div>
+            <div class="control-row" id="ctrl-acmode-row" style="display:none">
+              <span class="control-label"><i class="fa-solid fa-wind"></i> Chế độ</span>
+              <div class="btn-group">
+                <button class="btn-mode" data-mode="0"><i class="fa-solid fa-snowflake"></i> Lạnh</button>
+                <button class="btn-mode" data-mode="1"><i class="fa-solid fa-sun"></i> Nóng</button>
+                <button class="btn-mode" data-mode="2"><i class="fa-solid fa-wind"></i> Quạt</button>
+                <button class="btn-mode" data-mode="4"><i class="fa-solid fa-droplet"></i> Hút ẩm</button>
+              </div>
+            </div>
+            <div class="control-row" id="ctrl-fanspeed-row" style="display:none">
+              <span class="control-label"><i class="fa-solid fa-fan"></i> Tốc độ</span>
+              <div class="btn-group">
+                <button class="btn-speed" data-speed="1">1</button>
+                <button class="btn-speed" data-speed="2">2</button>
+                <button class="btn-speed" data-speed="3">3</button>
+                <button class="btn-speed" data-speed="0">Tự động</button>
+              </div>
+            </div>
+            <div class="control-row" id="ctrl-curtain-row" style="display:none">
+              <span class="control-label"><i class="fa-solid fa-align-justify"></i> Rèm</span>
+              <div class="btn-group">
+                <button class="btn-curtain" data-action="open"><i class="fa-solid fa-chevron-up"></i> Mở</button>
+                <button class="btn-curtain" data-action="stop"><i class="fa-solid fa-stop"></i> Dừng</button>
+                <button class="btn-curtain" data-action="close"><i class="fa-solid fa-chevron-down"></i> Đóng</button>
+              </div>
+            </div>
+            <div id="ctrl-send-status" class="send-status" style="display:none"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toast -->
+      <div id="toast" class="toast" style="display:none"></div>
+
+    </div><!-- #dashboard-overlay -->
+
+    <!-- MQTT.js + Dashboard logic -->
+    <script src="https://unpkg.com/mqtt@5.5.0/dist/mqtt.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
